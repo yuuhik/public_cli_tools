@@ -6,6 +6,6 @@ then
   STR=" "
 fi
 
-ag "$STR" /Users/kunitate.katagiri/memo/p.txt | peco | awk '{print $2}' | perl -pe 's/\n//g' | pbcopy
+ag "$STR" $HOME/memo/p.txt | peco | awk '{print $2}' | perl -pe 's/\n//g' | pbcopy
 
 exit 0
